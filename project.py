@@ -44,7 +44,7 @@ def main():
             print('No upcoming events found.')
             return
 
-        # prints the start and name of the next 10 events
+        # prints the start and name of the next 100 events (google forces you to set a limit, so i set a realistic testing number for now)
         for event in events:
             start = event['start'].get('dateTime', event['start'].get('date'))
             # checks to make sure that event has a name, if not, will print that there is none
